@@ -1,8 +1,10 @@
 package com.example.studysecond
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.math.pow
@@ -15,6 +17,15 @@ class ResultActivity: AppCompatActivity() {
 
         val height = intent.getIntExtra("height",0)
         val weight = intent.getIntExtra("weight",0)
+
+        val returnButton = findViewById<Button>(R.id.returnButton)
+
+        returnButton.setOnClickListener {
+
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+
+        }
 
         Log.d("ResultActivity", "height : $height , weight : $weight")
 

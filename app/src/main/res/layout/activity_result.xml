@@ -4,9 +4,11 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
+    android:padding="10dp"
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_gravity="center"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +28,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:gravity="center"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -41,7 +43,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_marginTop="20sp"
+        android:text="return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
