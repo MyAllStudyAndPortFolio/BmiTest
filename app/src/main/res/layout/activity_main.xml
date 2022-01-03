@@ -5,34 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".MainActivity">
     <TextView
-        android:text="신장"
+        android:textStyle="bold"
+        android:text="@string/height"
+        android:textSize="22sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:textColor="@color/little_black"
+
 
         />
     <EditText
+        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"/>
 
     <TextView
+        android:textColor="@color/little_black"
+        android:textStyle="bold"
+        android:textSize="22sp"
         android:id="@+id/textView"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="체중" />
+        android:text="@string/weight" />
 
     <EditText
         android:id="@+id/editTextNumber"
+        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number" />
 
     <Button
+        android:layout_marginTop="35dp"
         android:text="확인하기"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
