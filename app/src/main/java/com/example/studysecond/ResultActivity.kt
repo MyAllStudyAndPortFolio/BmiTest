@@ -38,7 +38,7 @@ class ResultActivity: AppCompatActivity() {
             bmi >= 18.5 -> "정상체중이네요 하지만 자칫하면 훅 가시는거 아시죠?"
             else -> "저체중이에요 정신차려요 닝겐 영양섭취 ㄱㄱ"
         }
-
+       // val resultVariableView = findViewById<TextView>(R.id.)
         val resultValueTextView = findViewById<TextView>(R.id.bmiResultTextView)
         val resultStringTextView = findViewById<TextView>(R.id.resultTextView)
 
